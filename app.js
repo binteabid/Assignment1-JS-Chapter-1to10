@@ -1,7 +1,7 @@
 
 
 document.write( "<h1>Assignment 1: Chapter 1 to 10</h1><hr>");
-// Chapter 1 Alerts!
+// Chapter# 1 Alerts!
 document.write("<h2>Chapter 1 Alerts!</h2><br>")
 
 /* 1. Write a script to greet your website visitor using JS alert
@@ -36,7 +36,7 @@ alert("Hello! I can run JS through my web browser's console")
 // The End
 
 
-// Chapter 2 Variables For Strings
+// Chapter# 2 Variables For Strings
 document.write("<h2> Chapter 2 Variables For Strings</h2><br>")
 
 
@@ -162,74 +162,192 @@ var quantity = 5
 document.write("<br>" + visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store." );
 
 // Chapter4:VARIABLE NAMES: LEGAL & ILLEGAL
-document.write("<h2>VARIABLE NAMES: LEGAL & ILLEGAL</h2><br>")
+document.write("<h2>Chapter# 4: VARIABLE NAMES: LEGAL & ILLEGAL</h2><br>")
 
 // Declare 3 variables in one statement. 
+
+document.write("<br><h3>Declaration and Initilization of 3 variables in one statement:</h3>")
+let firstName="Syed", midName="Ali", lastName="Bukhari";
+console.log("The full name of user is "+firstName+" " +midName+" "+ lastName+" .");
+document.write("<br>The full name of user is "+firstName+" " +midName+" "+ lastName+" .");
+
 //  2. Declare 5 legal & 5 illegal variable names.
+document.write("<br> <h3>Declare and Initialize 5 legal & 5 illegal variable names </h3>")
+
+let legalOne="1"
+console.log(legalOne)
+let $legal="2"
+console.log($legal)
+let legal_3="3"
+console.log(legal_3)
+let legal$= "4"
+console.log(legal$)
+let legal_name="5"
+console.log(legal_name)
+/*let 1illegal="1"
+console.log(1illegal)
+let @illegal="2"
+console.log(@illegal)
+let ILLEGAL="3"
+console.log(ILLEGAL)
+let illegal&= "4"
+console.log(illegal&)
+let i llegal= "5"
+console.log(i llegal)*/
+
+document.write("<br> let legalOne=1,<br>let $legal=2,<br>let legal_3=3, <br>let legal$= 4,<br>let legal_name=5, <br> let 1illegal=1, <br> let @illegal=2, <br> let ILLEGAL=3, <br> let illegal&= 4, <br> let i llegal= 5");
+
+
 //  3. Display this in your browser
 //  a) A heading stating "Rules for naming JS variables" 
+document.write("<br><h1>Rules for naming JS Variables</h1>")
 // b) Variable names can only contain_______,________,_______ and_______ .
 // For example $my_1stVariable 
+document.write("<br>Variable names can only contain letters, numbers, $ and _ . For example : Smy_IstVariabIe")
+
 // c) Variables must begin with a_______,__________,or________
 //  For example $name, name or name
+document.write("<br> Variable must begin with a letter, $ or _ . For example : $name, _name or name")
 //  d) Variable names are case ________
+
+document.write("<br> Variable names are case sensitive")
 // e) Variable names should not be JS _________
-/*Browser:Rules for naming JS variables
-Variable names can only contain , numbers, S and . For example : Smy_IstVariabIe
-Variable must begin with a letter, S or _ . For example : Sname, _name or name
-Variable names are case sensitive
-Variable names should not be JS keywords */
+
+document.write("<br> Variable names should not be JS keywords")
+
 
 // Chapter5:MATH EXPRESSIONS
-document.write("<h2>MATH EXPRESSIONS</h2><br>")
+document.write("<h2> Chapter# 5: MATH EXPRESSIONS</h2><br>")
 
 // 1. Write a program that take two numbers & add them in a new variable. Show the result in your browser.
-// Browser:Sum of 3 and 5 is 8
+document.write("<br><h3>Addition of two numbers</h3>")
+
+let num1= 5
+let num2= 3
+let add= num1 + num2
+console.log(add)
+
+document.write("<br>Sum of"+num1 +"and"+num2 +"is"+ add+ " .");
+
+
+
 
 /* 2. Repeat taskl for subtraction, multiplication, division &
-modulus.
-3. Do the following using JS Mathematic Expressions
-a. Declare a variable.
-b. Show the value of variable in your browser like "Value
-after variable declaration is: ??".
-c. Initialize the variable with some number.
-d. Show the value of variable in your browser like "Initial
-value: 5"•
-e. Increment the variable.
-f. Show the value of variable in your browser like "Value
-after increment is: 6".
-g. Add 7 to the variable.
-h. Show the value of variable in your browser like "Value
-after addition is: 13".
-i. Decrement the variable.
-j. Show the value of variable in your browser like "Value
-after decrement is: 12".
-k. Show the remainder after dividing the variable's value
-by 3•
-l. Output : "The remainder is : o".
+modulus.*/
 
-Browser:Value after variable declaration is undefined
-Initial value: 5
-Value after increment is: 6
-Value after addition is: 13
-Value after decrement is: 12
-The remainder is: 0
-4. Cost of one movie ticket is 600 P KR. Write a script to
+document.write("<br><h3>Subtration of two numbers</h3>")
+
+let num3= 5
+let num4= 3
+let sub= num3 - num4
+console.log(sub)
+
+document.write("<br>Subtraction of"+num3 +"and"+num4 +"is"+ sub+ " .");
+
+document.write("<br><h3>Multiplication of two numbers</h3>")
+
+let num5= 5
+let num6= 3
+let multiply = num5 * num6
+console.log(multiply)
+
+document.write("<br> Multiplication of"+num5 +"and"+num6 +"is"+ multiply+ " .");
+
+document.write("<br><h3>Modulus of two numbers</h3>")
+
+let num7= 15
+let num8= 4
+let modulus= num7 % num8
+console.log(modulus)
+
+document.write("<br> Modulus of"+num5 +"and"+num6 +"is"+ modulus+ " .");
+
+
+/*3. Do the following using JS Mathematic Expressions
+a. Declare a variable.*/
+
+let value;
+document.write("<br>let value; ")
+/*b. Show the value of variable in your browser like "Value
+after variable declaration is: ??".*/
+
+document.write("<br>Value after variable declaration is undefined. ")
+
+/*c. Initialize the variable with some number.*/
+value=5;
+console.log(value)
+document.write("<br> Initial value: 5")
+
+
+/*d. Show the value of variable in your browser like "Initial
+value: 5"•*/
+
+document.write("<br> Initial value: 5")
+/*e. Increment the variable.*/
+value++
+console.log(value)
+
+/*f. Show the value of variable in your browser like "Value
+after increment is: 6".*/
+document.write("<br>Value after increment is: 6")
+
+/*g. Add 7 to the variable.*/
+
+value= value + 7;
+console.log(value)
+/*h. Show the value of variable in your browser like "Value
+after addition is: 13".*/
+
+document.write("<br>Value after addition is: 13")
+
+/*i. Decrement the variable.*/
+ --value
+ console.log(value)
+/*j. Show the value of variable in your browser like "Value
+after decrement is: 12".*/
+
+document.write("<br>Value after decrement is: 12")
+/*k. Show the remainder after dividing the variable's value
+by 3•*/
+
+value=value % 3 
+console.log(value)
+document.write("<br>The remainder is: 0")
+/*l. Output : "The remainder is : o".*/
+document.write("<br>The remainder is: 0")
+
+
+
+/*4. Cost of one movie ticket is 600 P KR. Write a script to
 store ticket price in a variable & calculate the cost of buying 5
-tickets to a movie. Example output:
-Browser:Total cost to buy 5 tickets to a movie is 3000PKR
-5. Write a script to display multiplication table of any
-number in your browser. E.g Table of 4
-6. The Temperature Converter: It's hot out! Let's make a
+tickets to a movie. Example output:*/
+
+let ticketPrice= 600;
+let ticketsBuy= 5
+let totalBill= ticketPrice * ticketsBuy
+console.log(totalBill);
+
+
+document.write("<br>Total cost to buy "+ ticketsBuy+" tickets to a movie is "+totalBill +" PKR.")
+
+/*5. Write a script to display multiplication table of any
+number in your browser. E.g Table of 4*/
+
+
+
+
+/*6. The Temperature Converter: It's hot out! Let's make a
 converter based on the steps here.
-a. Store a Celsius temperature into a variable.
-b. Convert it to Fahrenheit & output "NNoC is NNoF".
-c. Now store a Fahrenheit temperature into a variable.
-d. Convert it to Celsius & output "NN0F is NN0C".
+a. Store a Celsius temperature into a variable.*/
+/*b. Convert it to Fahrenheit & output "NNoC is NNoF".*/
+/*c. Now store a Fahrenheit temperature into a variable.*/
+/*d. Convert it to Celsius & output "NN0F is NN0C".
 Conversion Formulae:
 X9/5)+32
-Browser:250C is 770F
-7. Write a program to implement checkout process of a
+Browser:250C is 770F*/
+
+
+/*7. Write a program to implement checkout process of a
 shopping cart system for an e-commerce website. Store
 the following in variables
 a. Price of item 1
@@ -244,28 +362,36 @@ Quantity of item I is 3
 Price of item 2 is 100
 Quantity of item 2 is 7
 Shipping Charges 100
-Total cost of your order is 2750
-8. Store total marks & marks obtained by a student in 2
+Total cost of your order is 2750*/
+
+
+/*8. Store total marks & marks obtained by a student in 2
 variables. Compute the percentage & show the result in
 your browser
 Browser: Marks Sheet
 Total marks: 980
 Marks obtained: 804
-Percentage: 82.0408163265306%
-9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+Percentage: 82.0408163265306%*/
+
+
+/*9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
 script to convert the total currency to Pakistani Rupees.
 Perform all calculations in a single expression.
 (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
 and 1 Saudi Riyal = 28 Pakistani Rupee)
 Browser:Currency in PKR
-Total Currency in PKR: 1748
-10. Write a program to initialize a variable with some
+Total Currency in PKR: 1748*/
+
+
+/*10. Write a program to initialize a variable with some
 number and do arithmetic in following sequence:
 a. Add 5
 b. Multiply by 10
 c. Divide the result by 2
-Perform all calculations in a single expression
-11. The Age Calculator: Forgot how old someone is?
+Perform all calculations in a single expression*/
+
+
+/*11. The Age Calculator: Forgot how old someone is?
 Calculate it!
 a. Store the current year in a variable.
 b. Store their birth year in a variable.
@@ -276,8 +402,10 @@ ears old".
 Browser:Age Calculator
 Current Year: 2016
 Birth Year: 1992
-Your Age is: 24
-12. The Geometrizer: Calculate properties of a circle.
+Your Age is: 24*/
+
+
+/*12. The Geometrizer: Calculate properties of a circle.
 a. Store a radius into a variable.
 b. Calculate the circumference based on the radius, and
 output "The circumference is NN".
@@ -287,8 +415,10 @@ area is NN". (Hint : Area ofa circle r2, 3.142)
 Browser:The Geometrizer
 Radius of a circle: 20
 The circumference is: 125.67999999999999
-The area is: 1256.8
-13. The Lifetime Supply Calculator: Ever wonder how
+The area is: 1256.8*/
+
+
+/*13. The Lifetime Supply Calculator: Ever wonder how
 much a "lifetime supply" of your favorite snack is?
 Wonder no more.
 a. Store your favorite snack into a variable
@@ -303,7 +433,7 @@ Amount of snacks per day: 3
 You will need 150 chocolate chip to last you until the ripe old age of 65*/
 
 // Chapter6-9:MATH EXPRESSIONS
-document.write("<h2>MATH EXPRESSIONS</h2><br>")
+document.write("<h2> Chapter# 6-9: MATH EXPRESSIONS</h2><br>")
 
 /* 1. Write a program to take a number in a variable, do the required arithmetic to display the following result in your browser:
 Result:
@@ -336,9 +466,11 @@ result in browser like this.(Hint: user table)
  */
 
 // Chapter9-11:USER INPUT & CONDITIONAL STATEMENT
-document.write("<h2>USER INPUT & CONDITIONAL STATEMENT</h2><br>")
+document.write("<h2> Chapter# 9-11 USER INPUT & CONDITIONAL STATEMENT</h2><br>")
 
-/* 1. Write a program to take "city" name as input from user. If user enters "Karachi", welcome the user like this: "Welcome to city of lights" 2. Write a program to take "gender" as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma'am. 3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
+/* 1. Write a program to take "city" name as input from user. If user enters "Karachi", welcome the user like this: "Welcome to city of lights"
+ 2. Write a program to take "gender" as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma'am.
+  3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
 Signal color	Messa e
 Red	Must Stop
 Yellow	Ready to move
