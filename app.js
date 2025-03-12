@@ -567,20 +567,41 @@ document.write("<br>You will need "+ totalAmount+ " chocolate chip to last you u
 document.write("<h2> Chapter# 6-9: MATH EXPRESSIONS</h2><br>")
 
 /* 1. Write a program to take a number in a variable, do the required arithmetic to display the following result in your browser:
-Result:
-The value of a is: IO
-The value of++a is: II
-Now the value of a is: 11
-The value of a++ is: II
-Now the value of a is: 12
-The value of --a is: I I
-Now the value of a is: II
-The value of a-- is: II
-Now the value ofa is: IO
-2. What will be the output in variables a, b & result after
+*/
+
+document.write("<h3> Result of Increment and Decrement</h3><hr>")
+
+let a=10
+console.log(a)
+document.write("<br>The value of a is:"+a+"")
+document.write("<br>Now the value of a is:"+a+"")
+
+++a
+console.log(a)
+document.write("<br>The value ++a is:"+a+"")
+document.write("<br>Now the value of a is:"+a+"")
+
+
+a++
+console.log(a)
+document.write("<br>The value a++ is:" +a+"")
+document.write("<br>Now the value of a is:"+a+"")
+
+--a
+console.log(a)
+document.write("<br>The value --a is:" +a+"")
+document.write("<br>Now the value of a is:"+a+"")
+
+a--
+console.log(a)
+document.write("<br>The value a-- is:" +a+"")
+document.write("<br>Now the value of a is:"+a+"")
+
+
+/*2. What will be the output in variables a, b & result after
 execution of the following script:
-var a —2, b l;
-var result —
+var a =2, b= l;
+var result =
 Explain the output at each stage:
 --a;
 --a - --b;
@@ -588,8 +609,11 @@ Explain the output at each stage:
 --a - --b + ++b + b--;
 Browser:a is ??
 bis
-result is ??
-3. Write a program that takes input a name from user & greet the user. 4. 5. Write a program to take input a number from user & display it's multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default. 6. Take a) Take three subjects name from user and store them in 3 different variables. b) Total marks for each subject is 100, store it in another variable. c) Take obtained marks for first subject from user and stored it in different variable.
+result is ??*/
+
+/*3. Write a program that takes input a name from user & greet the user. 4. 
+5. Write a program to take input a number from user & display it's multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default. 
+6. Take a) Take three subjects name from user and store them in 3 different variables. b) Total marks for each subject is 100, store it in another variable. c) Take obtained marks for first subject from user and stored it in different variable.
 d) Take obtained marks for remaining 2 subjects from user
 and store them in variables.
 e) Now calculate total marks and percentage and show the
