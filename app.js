@@ -333,18 +333,45 @@ document.write("<br>Total cost to buy "+ ticketsBuy+" tickets to a movie is "+to
 /*5. Write a script to display multiplication table of any
 number in your browser. E.g Table of 4*/
 
-
-
+document.write("<br><h3>Table of 2 </h3>")
+document.write("<br>2x1=2")
+document.write("<br>2x2=4")
+document.write("<br>2x3=6")
+document.write("<br>2x4=8")
+document.write("<br>2x5=10")
+document.write("<br>2x6=12")
+document.write("<br>2x7=14")
+document.write("<br>2x8=16")
+document.write("<br>2x9=18")
+document.write("<br>2x10=20")
+document.write("<br>The End")
 
 /*6. The Temperature Converter: It's hot out! Let's make a
 converter based on the steps here.
 a. Store a Celsius temperature into a variable.*/
+
+document.write("<br><h3> The Temperature Converter </h3>")
+
+let celsiusTemp= 27
+document.write("<br> °C=27")
 /*b. Convert it to Fahrenheit & output "NNoC is NNoF".*/
+
+let fahrenheitTemp= (celsiusTemp *9/5) +32
+console.log(fahrenheitTemp)
+document.write("<br> 27°C is "+fahrenheitTemp+ "°F.")
+
 /*c. Now store a Fahrenheit temperature into a variable.*/
+
+let fahrenheitTem= 70
+document.write("<br> °F=70")
+
 /*d. Convert it to Celsius & output "NN0F is NN0C".
-Conversion Formulae:
-X9/5)+32
-Browser:250C is 770F*/
+*/
+let celsiusTem= (fahrenheitTem - 32) *5/9
+
+console.log(celsiusTem)
+
+document.write("<br> 70°F is "+celsiusTem+ "°C.")
 
 
 /*7. Write a program to implement checkout process of a
@@ -355,23 +382,56 @@ b. Price of item 2
 c. Ordered quantity of item 1
 d. Ordered Quantity of item 2
 e. Shipping charges
-Compute the total cost & show the receipt in your browser.
-Browser: Shopping Cart
-Price of item 1 is 650
-Quantity of item I is 3
-Price of item 2 is 100
-Quantity of item 2 is 7
-Shipping Charges 100
-Total cost of your order is 2750*/
+Compute the total cost & show the receipt in your browser.*/
+document.write("<br><h3> Shopping Cart  </h3>")
+
+let priceOfItem1= 650
+console.log(priceOfItem1)
+
+let priceOfItem2= 100
+console.log(priceOfItem2)
+
+let orderOfItem1=3
+console.log(orderOfItem1)
+
+let orderOfItem2=7
+console.log(orderOfItem2)
+
+let shippingCharges=100
+console.log(shippingCharges)
+
+let totalCost=(priceOfItem1 * orderOfItem1)+(priceOfItem2*orderOfItem2)+(shippingCharges)
+console.log(totalCost)
+
+document.write("<br>Price of item 1 is "+priceOfItem1 +"." )
+document.write("<br> Quantity of item I is"+orderOfItem1 +"." )
+document.write("<br> Price of item 2 is"+ priceOfItem2+"." )
+document.write("<br> Quantity of item 2 is"+ orderOfItem2+"." )
+document.write("<br>Shipping Charges "+shippingCharges +"." )
+document.write("<br> Total cost of your order is " + totalCost+"." )
+
+
 
 
 /*8. Store total marks & marks obtained by a student in 2
 variables. Compute the percentage & show the result in
 your browser
-Browser: Marks Sheet
-Total marks: 980
-Marks obtained: 804
-Percentage: 82.0408163265306%*/
+*/
+
+document.write("<br> Marks Sheet ")
+
+let totalMarks=980
+console.log(totalMarks)
+document.write("<br> Total marks: " +totalMarks+"")
+
+let obtainedMarks=804
+console.log(obtainedMarks)
+document.write("<br> Marks obtained: " + obtainedMarks+"")
+
+
+let percentage= (obtainedMarks/totalMarks*100)
+console.log(percentage)
+document.write("<br> Percentage: "+percentage+"")
 
 
 /*9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
@@ -383,6 +443,19 @@ Browser:Currency in PKR
 Total Currency in PKR: 1748*/
 
 
+document.write("<br> <h3>Currency Conversion in PKR</h3>")
+
+let dollarsUS=10, riyalsSaudi=25;
+console.log(dollarsUS, riyalsSaudi)
+let perDollarToPKR=  104.80  , perRiyalToPKR=28;
+console.log("1 US Dollar = "+perDollarToPKR+  "and 1 Saudi Riyal ="+perRiyalToPKR)
+document.write("<br> US dollars: "+dollarsUS+" ; and Saudi Riyals: "+riyalsSaudi+"")
+document.write("<br>1 US Dollar = "+perDollarToPKR+" Pakistani Rupee and 1 Saudi Riyal ="+perRiyalToPKR+" Pakistani Rupee" )
+
+let convertToPKR=((dollarsUS*perDollarToPKR)+(riyalsSaudi*perRiyalToPKR));
+console.log(convertToPKR)
+document.write("<br> Total Currency in PKR: "+convertToPKR+".")
+
 /*10. Write a program to initialize a variable with some
 number and do arithmetic in following sequence:
 a. Add 5
@@ -390,6 +463,16 @@ b. Multiply by 10
 c. Divide the result by 2
 Perform all calculations in a single expression*/
 
+document.write("<br> <h3>Arithematic Program </h3>")
+
+
+let number=10
+console.log(number);
+
+
+number=((number + 5) *10 /2)
+console.log(number)
+document.write("<br> Add 5, Multiply by 10 and divide the result by 2: " +number+"")
 
 /*11. The Age Calculator: Forgot how old someone is?
 Calculate it!
@@ -399,10 +482,20 @@ c. Calculate their 2 possible ages based on the stored
 values.
 Output them to the screen like so: "They are either NN or NN
 ears old".
-Browser:Age Calculator
-Current Year: 2016
-Birth Year: 1992
-Your Age is: 24*/
+*/
+document.write("<br> <h3>Age Calculator </h3>")
+
+let currentYear= 2025
+console.log(currentYear)
+document.write("<br>Current Year: "+currentYear+"")
+
+let birthYear= 2016
+console.log(birthYear)
+document.write("<br> Birth Year: "+birthYear+"")
+
+let yourAge=(currentYear-birthYear)
+console.log(yourAge)
+document.write("<br> Your Age is: "+yourAge+" years old.")
 
 
 /*12. The Geometrizer: Calculate properties of a circle.
@@ -412,10 +505,23 @@ output "The circumference is NN".
 (Hint : Circumference ofa circle 2 7t r , 7t 3.142)
 Calculate the area based on the radius, and output "The
 area is NN". (Hint : Area ofa circle r2, 3.142)
-Browser:The Geometrizer
-Radius of a circle: 20
-The circumference is: 125.67999999999999
-The area is: 1256.8*/
+*/
+
+document.write("<br> <h3> The Geometrizer </h3>")
+
+let radius= 20
+console.log(radius)
+document.write("<br> Radius of a circle: "+radius+"")
+
+
+let circumference= (2*3.142*radius)
+console.log(circumference)
+document.write("<br>The circumference is: "+circumference+"")
+
+
+let area= (3.142*(radius*radius))
+console.log(area)
+document.write("<br>The circumference is: "+area+"")
 
 
 /*13. The Lifetime Supply Calculator: Ever wonder how
@@ -424,13 +530,38 @@ Wonder no more.
 a. Store your favorite snack into a variable
 b. Store your current age into a variable.
 c. Store a maximum age into a variable.
-d. Store an estimated amount per day (as a number). e. Calculate how many would you eat total for the rest of your life. Output the result to the screen like so: "You will need NNNN to last you until the ripe old age of NN".
+d. Store an estimated amount per day (as a number).
+ e. Calculate how many would you eat total for the rest of your life. Output the result to the screen like so: "You will need NNNN to last you until the ripe old age of NN".
 Browser:The Lifetime Supply Calculator
 Favourite Snack: chocolate chip
 Current age: 15
 Estimated Maximum Age: 65
 Amount of snacks per day: 3
 You will need 150 chocolate chip to last you until the ripe old age of 65*/
+
+document.write("<br> <h3> The Lifetime Supply Calculator </h3>")
+
+let favSnack="chocolate chip"
+console.log(favSnack)
+document.write("<br>Favourite Snack:"+favSnack+"")
+
+let ageNow=15
+console.log(ageNow)
+document.write("<br>Current age: "+ageNow+"")
+
+let estimatedAge=65
+console.log(estimatedAge)
+document.write("<br>Estimated Maximum Age:"+estimatedAge+"")
+
+let estimatePerDay=3
+console.log(estimatePerDay)
+document.write("<br>Amount of snacks per day: "+estimatePerDay+"")
+
+let totalAmount=((estimatedAge-ageNow) *3)
+console.log(totalAmount)
+document.write("<br>You will need "+ totalAmount+ " chocolate chip to last you until the ripe old age of "+ estimatedAge+"")
+
+
 
 // Chapter6-9:MATH EXPRESSIONS
 document.write("<h2> Chapter# 6-9: MATH EXPRESSIONS</h2><br>")
@@ -501,14 +632,3 @@ alert("False");
 }
 */
 
-// Chapter8:
-document.write("<h2></h2><br>")
-
-// Chapter9:
-document.write("<h2></h2><br>")
-
-// Chapter10:
-document.write("<h2></h2><br>")
-
-// Chapter11:
-document.write("<h2></h2><br>")
