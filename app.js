@@ -601,7 +601,7 @@ document.write("<br>Now the value of a is:"+a+"")
 /*2. What will be the output in variables a, b & result after
 execution of the following script:
 var a =2, b= l;
-var result =
+var result =--a - --b + ++b + b--;
 Explain the output at each stage:
 --a;
 --a - --b;
@@ -610,6 +610,25 @@ Explain the output at each stage:
 Browser:a is ??
 bis
 result is ??*/
+
+document.write("<h3> Output result of Increment and Decrement</h3><br>")
+let aA = 2 , b=1;
+
+console.log(aA, b)
+document.write("<br>The values of aA and b are:"+aA+" and "+b+"")
+
+
+var result= --aA - --b + ++b + b--;
+console.log(result)
+document.write("<br>Result is:"+result+"");
+
+document.write("<h3>Expalnation of each satge:</h3><br>")
+
+document.write("Output result of --aA (Pre-decrement:2-1) = 1<br>")
+document.write("Output result of --aA (Pre-decrement:2-1=1)- --b (Pre-decrement:1-1=0)= 1 <br>")
+document.write("Output result of --aA (Pre-decrement:2-1=1)- --b (Pre-decrement:1-1=0) + ++b (Pre-increment: 0+1=1)= 2<br>")
+document.write("Output result of --aA (Pre-decrement:2-1=1)- --b (Pre-decrement:1-1=0) + ++b (Pre-increment: 0+1=1)+ b-- (Post-decrement:1(After this operation b becomes 0))= 3<br>")
+
 
 /*3. Write a program that takes input a name from user & greet the user. 4. 
 5. Write a program to take input a number from user & display it's multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default. 
