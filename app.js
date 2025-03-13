@@ -607,9 +607,7 @@ Explain the output at each stage:
 --a - --b;
 --a - --b + ++b;
 --a - --b + ++b + b--;
-Browser:a is ??
-bis
-result is ??*/
+*/
 
 document.write("<h3> Output result of Increment and Decrement</h3><br>")
 let aA = 2 , b=1;
@@ -630,27 +628,92 @@ document.write("Output result of --aA (Pre-decrement:2-1=1)- --b (Pre-decrement:
 document.write("Output result of --aA (Pre-decrement:2-1=1)- --b (Pre-decrement:1-1=0) + ++b (Pre-increment: 0+1=1)+ b-- (Post-decrement:1(After this operation b becomes 0))= 3<br>")
 
 
-/*3. Write a program that takes input a name from user & greet the user. 4. 
-5. Write a program to take input a number from user & display it's multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default. 
-6. Take a) Take three subjects name from user and store them in 3 different variables. b) Total marks for each subject is 100, store it in another variable. c) Take obtained marks for first subject from user and stored it in different variable.
+/*3. Write a program that takes input a name from user & greet the user.*/
+
+document.write("<h3>Greetings:</h3>")
+
+let userName= prompt("Enter your name", "" )
+let greetMsg= "Welcome to this Page"
+console.log(greetMsg)
+console.log(greetMsg+" "+userName+"!" )
+document.write("<br>" +greetMsg+" "+userName+"!" )
+ 
+/*4. Empty*/
+/*5. Write a program to take input a number from user & display it's multiplication table on your browser. 
+If user does not enter a new number, multiplication table of 5 should be displayed by default.*/
+
+
+
+
+
+/*6. Take a) Take three subjects name from user and store them in 3 different variables.
+ b) Total marks for each subject is 100, store it in another variable. 
+ c) Take obtained marks for first subject from user and stored it in different variable.
 d) Take obtained marks for remaining 2 subjects from user
 and store them in variables.
 e) Now calculate total marks and percentage and show the
 result in browser like this.(Hint: user table)
  */
 
+document.write("<h3>Report Card: Subject Total Marks Obtained Marks Percentage</h3>")
+
+let subj1 = prompt("Enter the name of  subject 1:");
+let subj2 = prompt("Enter the name of  subject 2:");
+let subj3 = prompt("Enter the name of  subject 3:");
+console.log(subj1, subj2, subj3)
+document.write("<br> The subject 1 is: "+subj1+"<br> The subject 2 is: "+subj2+"<br> The subject 3 is: " +subj3+"")
+
+let totalMarksPerSubject = 100;
+console.log("Total marks for each subject: "+totalMarksPerSubject)
+document.write("<br> Total marks for each subject is "+totalMarksPerSubject+"")
+
+let totalMarksOf3 = totalMarksPerSubject * 3;
+console.log("Total marks for all 3 subject: "+totalMarksOf3)
+document.write("<br> Total marks for all 3 subject: "+totalMarksOf3+"")
+
+let marksSubj1 = +prompt("Enter obtained marks for" +subj1);
+console.log("Total marks of"+subj1+": "+marksSubj1)
+document.write("<br> The marks of "+subj1+  "is: "+marksSubj1)
+
+let marksSubj2 = +prompt("Enter obtained marks for" +subj2);
+console.log("Total marks of"+subj2+": "+marksSubj2)
+document.write("<br> The marks of "+subj2+  "is: "+marksSubj2+"")
+
+let marksSubj3 = +prompt("Enter obtained marks for" +subj3);
+console.log("Total marks of"+subj3+": "+marksSubj3)
+document.write("<br> The marks of "+subj3+  "is: "+marksSubj3+"")
+
+
+
+let totalObtained = marksSubj1 + marksSubj2 + marksSubj3;
+console.log("Total Obtained marks: "+totalObtained)
+document.write("<br>Total Obtained marks: "+totalObtained+"")
+
+let percentageOfTotalObtinedMarks = (totalObtained / totalMarksOf3) * 100;
+console.log("Percentage: "+percentageOfTotalObtinedMarks)
+document.write("<br>Percentage: "+percentageOfTotalObtinedMarks+"%")
+
+
+document.write("<br> <table> <tr>    <th>Subject</th>     <th>Total Marks</th>    <th>Obtained Marks</th></tr><tr>    <td>"+ subj1+"</td>    <td>"+totalMarksPerSubject+"</td>    <td>"+marksSubj1+"</td></tr> <tr>    <td>"+subj2+"</td>   <td>"+totalMarksPerSubject+"</td>   <td>"+marksSubj2+"</td></tr><tr>   <td>"+subj3+"</td>    <td>"+totalMarksPerSubject+"</td>    <td>"+marksSubj3+"</td></tr><tr>    <th>Total</th>   <th>"+totalMarksOf3+"</th>    <th>"+totalObtained+"</th></tr><tr>   <th>Percentage</th>    <th>"+percentageOfTotalObtinedMarks+"% </th></tr></table>");
+
+
+
+
+
 // Chapter9-11:USER INPUT & CONDITIONAL STATEMENT
 document.write("<h2> Chapter# 9-11 USER INPUT & CONDITIONAL STATEMENT</h2><br>")
 
-/* 1. Write a program to take "city" name as input from user. If user enters "Karachi", welcome the user like this: "Welcome to city of lights"
- 2. Write a program to take "gender" as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma'am.
-  3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
+/* 1. Write a program to take "city" name as input from user. If user enters "Karachi", welcome the user like this: "Welcome to city of lights"*/
+
+ /*2. Write a program to take "gender" as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma'am.
+  /*3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
 Signal color	Messa e
 Red	Must Stop
 Yellow	Ready to move
 Green	Move now
-4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.251itres, show the message "Please refill the fuel in your car"
- 5. Run this script, & check whether alert message would be displayed or not. Record the outputs. a. var a = 4; if ( — 5) { alert("given condition for variable a is true"); 
+/*4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.251itres, show the message "Please refill the fuel in your car"
+ /*5. Run this script, & check whether alert message would be displayed or not. Record the outputs.
+  a. var a = 4; if ( — 5) { alert("given condition for variable a is true"); 
  b. var b 82;
 if (b++
 alert("given condition for variable b is true");
